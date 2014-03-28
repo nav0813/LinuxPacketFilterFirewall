@@ -4,8 +4,6 @@
 
 #define FILENAME "/proc/fwpolicy"
 
-using std::cout;
-
 int main(int argc, char* argv[]){
 	MiniFirewall::OptionsParser parser(argc, argv);
 	MiniFirewall::FileHandler fileHandler(FILENAME);
