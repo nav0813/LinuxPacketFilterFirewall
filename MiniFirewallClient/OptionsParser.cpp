@@ -8,18 +8,18 @@
 namespace MiniFirewall{
 
 	OptionsParser::OptionsParser(int count, char** args): m_iNumArgs(count),
-												m_aOptionsArray(args),
-												m_bValidRule(true),
-												m_bRulePrint(false),
-												m_sPkt(string("PKT")),
-												m_sSrcAddr(string("SRCIP*")),
-												m_sDstAddr(string("DSTIP*")),
-												m_sSrcPt(string("SRCPT*")),
-												m_sDstPt(string("DSTPT*")),
-												m_sProto(string("PROTO")),
-												m_sAct(string("ACT")),
-												m_sTrail(string(" ")),
-												m_sFirewallRule(string(" ")){}
+								m_aOptionsArray(args),
+								m_bValidRule(true),
+								m_bRulePrint(false),
+								m_sPkt(string("PKT")),
+								m_sSrcAddr(string("SRCIP*")),
+								m_sDstAddr(string("DSTIP*")),
+								m_sSrcPt(string("SRCPT*")),
+								m_sDstPt(string("DSTPT*")),
+								m_sProto(string("PROTO")),
+								m_sAct(string("ACT")),
+								m_sTrail(string(" ")),
+								m_sFirewallRule(string(" ")){}
 
 	void OptionsParser::m_vParse(){
 		int opt, options = 0;
