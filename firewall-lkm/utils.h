@@ -4,10 +4,6 @@
 #include <linux/string.h>
 #include <asm/uaccess.h>
 
-//extern struct t_rule;
-//void processRule (char* prule, struct t_rule rules[], int index);
-//void processRule (char* prule);
-
 /* Utility functions */
 unsigned int str_to_port(char*);
 unsigned int str_to_ip(char*, int);
