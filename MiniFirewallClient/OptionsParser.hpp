@@ -7,7 +7,6 @@
 #define OPTIONSPARSER_HPP_
 #include <string>
 #include <iostream>
-#include <fstream>
 #include <getopt.h>
 using std::string;
 using std::cout;
@@ -15,9 +14,9 @@ using std::cout;
 
 namespace MiniFirewall{
 	/**
-	 * FileHandler provides the functionality to write the parsed firewall 
-	 * rules to a /proc filesystem
-	 */
+	* FileHandler provides the functionality to write the parsed firewall 
+	* rules to a /proc filesystem
+	*/
 	class OptionsParser {
 	public:
 		/**
