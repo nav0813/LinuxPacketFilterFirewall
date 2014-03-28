@@ -1,0 +1,16 @@
+CXX=g++ 
+CFLAGS=-c
+OFLAGS=-o
+RM=rm -f
+
+MiniFirewall  : FileHandler.o OptionsParser.o main.o
+	$(CXX) $(OFLAGS) MiniFirewall FileHandler.o OptionsParser.o main.o
+main.o : main.cpp
+	$(CXX) $(CFLAGS) main.cpp
+FileHandler.o : FileHandler.hpp FileHandler.cpp
+	$(CXX) $(CFLAGS) FileHandler.cpp
+OptionsParser.o : OptionsParser.hpp OptionsParser.cpp
+	$(CXX) $(CFLAGS) OptionsParser.cpp
+clean:
+	$(RM) *.o
+	$(RM) MiniFirewall 
