@@ -4,8 +4,6 @@
 #include <linux/proc_fs.h>
 #include "utils.h"
 
-//extern void processRule (char* prule, struct t_rule rules[], int index);
-
 /* Read and write functions for the proc entry */
 ssize_t firewall_write(struct file* fp, const char __user* buff, unsigned long len, void* data);
 int firewall_read(char* page, char** start, off_t off, int count, int* eof, void* data);
