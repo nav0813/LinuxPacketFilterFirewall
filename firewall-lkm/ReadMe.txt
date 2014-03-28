@@ -1,23 +1,15 @@
 To build the LKM, which is the core packet-filtering module
- 
-
 
 make
-
-
 --------------------------------------------------------------------
 To clean and build
 
 make clean
 make 
-
-
 --------------------------------------------------------------------
 Load the module 
 
 insmod firewall.ko
-
-
 --------------------------------------------------------------------
 Remove the 
 
