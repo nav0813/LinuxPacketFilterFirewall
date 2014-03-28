@@ -11,7 +11,6 @@
 
 #include "netfltrHooks.h"
 #include "procfsHelper.h"
-//#include "utils.h"
 
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("PACKET-FILTER FIREWALL");
