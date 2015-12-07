@@ -162,7 +162,7 @@ unsigned int out_hook_func(unsigned int hooknum, struct sk_buff* skb, const stru
 					}
 				}
 			}
-			/* Check if the rule has protocol field set to TCP */
+			/* Check if the rule has protocol field set to UDP */
 			if((T_RULES[i].proto == 2) && (ip_header->protocol == 17)) {
 				/* Check IP address */
 				if(compare_ip((unsigned int)ip_header->daddr, T_RULES[i].srcip)) {
